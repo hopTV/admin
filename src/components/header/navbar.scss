@@ -1,0 +1,23 @@
+.li-animation {
+  // color: #4e4e4e;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.li-animation::before {
+  content: attr(data-text);
+  border-bottom: 3px solid #ef4366;
+  color: rgb(5, 153, 67);
+  white-space: normal;
+  width: 0%;
+  overflow: hidden;
+  padding: 1px 0;
+  transition: 1s;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.li-animation:hover::before {
+  width: 100%;
+}

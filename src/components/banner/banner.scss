@@ -1,0 +1,25 @@
+.swiper-button-next,
+.swiper-button-prev {
+  //   font-size: 20px !important;
+  padding: 5px 15px;
+  border-radius: 10px;
+  opacity: 0.6;
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.24);
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+  transition: all;
+  transition-duration: 300;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+  color: #fff;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+}

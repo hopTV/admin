@@ -1,0 +1,52 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #ced3d3;
+  color: #767676;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;400;500;700;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;400;500;700;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .links {
+    @apply text-gray-800 font-semibold cursor-pointer hover:text-red-600 transition-all duration-300;
+  }
+  .links-mobile {
+    @apply py-3 px-2 flex items-center justify-start border-b hover:text-red-600 transition-all duration-500;
+  }
+  .btn-slide {
+    @apply border border-white lg:text-[12px] text-sm text-white px-3 py-1 mb-2 rounded-md hover:border-red-400 transition duration-200 hover:bg-red-400;
+  }
+  .btn-category {
+    @apply p-3 border rounded-md border-gray-200 text-white bg-red-400 cursor-pointer hover:text-gray-700 hover:bg-transparent hover:border-red-600 transition-all duration-300;
+  }
+
+  .btn-active {
+    @apply bg-transparent;
+  }
+}
+
+/* .product-item {
+  background: red;
+} */
+
+button.active {
+  background-color: #04aa6d;
+  color: white;
+}

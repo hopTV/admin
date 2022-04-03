@@ -1,0 +1,24 @@
+.btn-action {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-edit,
+.btn-delete {
+  font-size: 1.2rem;
+  color: var(--txt-color);
+  cursor: pointer;
+}
+
+.btn-edit:hover,
+.btn-delete:hover {
+  color: var(--main-color);
+}
+
+.list-user {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}

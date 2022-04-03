@@ -1,0 +1,61 @@
+.status-dashboard {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.5s ease 0s;
+  margin-bottom: 30px;
+}
+
+.status-dashboard-icon {
+  width: 30%;
+  height: 100%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.statu-dashboard-info {
+  flex-grow: 1;
+  text-align: center;
+  z-index: 1;
+  text-transform: capitalize;
+}
+
+.statu-dashboard-info h4 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.status-dashboard::before {
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to top right,
+    var(--main-color),
+    var(--second-color)
+  );
+
+  position: absolute;
+  left: -60%;
+  top: 0;
+  transform: scale(0);
+  transition: transform 0.8s ease 0s;
+}
+
+.status-dashboard:hover::before {
+  transform: scale(3);
+}
+
+.status-dashboard:hover {
+  color: var(--text-white);
+}
